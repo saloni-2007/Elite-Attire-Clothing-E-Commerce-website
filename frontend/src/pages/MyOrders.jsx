@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import api from "../utils/api";
 import orderCSS from "./MyOrders.module.css";
 
-const IMAGE_API = "http://localhost:4000/uploads/";
+const IMAGE_API = "https://elite-attire-backend.onrender.com/uploads/";
 
 function MyOrders() {
   const [orders, setOrders] = useState([]);

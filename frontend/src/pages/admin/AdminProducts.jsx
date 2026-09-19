@@ -21,7 +21,7 @@ function AdminProducts() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const IMAGE_API="http://localhost:4000/uploads/";
+  const IMAGE_API="https://elite-attire-backend.onrender.com/uploads/";
   const [data, setData] = useState({
     title: "",
     description: "",
@@ -413,7 +413,7 @@ if (endPage - startPage < maxVisiblePages - 1) {
 
                  <img
                key={index}
-             src={`http://localhost:4000/uploads/${img}`}
+             src={`https://elite-attire-backend.onrender.com/uploads/${img}`}
                   alt=""
                   width="100"
                    />

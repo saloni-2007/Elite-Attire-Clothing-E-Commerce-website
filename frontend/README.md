@@ -6,4 +6,4 @@ npm i
 npm run dev
 
 This will start the project locally on PORT: 4000
-Check health by pasting this url in your browser: http://localhost:4000/health
+Check health by pasting this url in your browser: https://elite-attire-backend.onrender.com/health

@@ -180,7 +180,7 @@ async function updateStatus(orderId, status) {
   item.productId && (
     <div key={item._id} className="productRow">
       <img
-        src={`http://localhost:4000/uploads/${item.productId.images?.[0]}`}
+        src={`https://elite-attire-backend.onrender.com/uploads/${item.productId.images?.[0]}`}
         alt={item.productId.title}
       />
 

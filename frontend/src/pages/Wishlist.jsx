@@ -52,7 +52,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
              .map((item) => (
             <div className="wishlist-card" key={item._id}>
               <img
-             src={`http://localhost:4000/uploads/${item.product?.images?.[0] || "no-image.png"}`}
+             src={`https://elite-attire-backend.onrender.com/uploads/${item.product?.images?.[0] || "no-image.png"}`}
              alt={item.product?.title}
               />
 
@@ -102,7 +102,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
       </button>
 
       <img
-        src={`http://localhost:4000/uploads/${selectedProduct.images[0]}`}
+        src={`https://elite-attire-backend.onrender.com/uploads/${selectedProduct.images[0]}`}
         alt={selectedProduct.title}
         className="bigImage"
       />
