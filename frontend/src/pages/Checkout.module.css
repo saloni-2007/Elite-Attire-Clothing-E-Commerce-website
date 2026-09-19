@@ -1,0 +1,354 @@
+```css
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 40px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.left {
+    flex: 2;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.right {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* =========================
+   ADDRESS FORM
+========================= */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.fullWidth {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.form textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+/* =========================
+   PAYMENT SECTION
+========================= */
+
+.paymentHeading {
+    margin-top: 35px !important;
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.payment:hover {
+    border-color: #000;
+}
+
+.payment label {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.payment input {
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.payment span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.payment strong {
+    font-size: 15px;
+    color: #222;
+}
+
+.payment small {
+    color: #777;
+    font-size: 13px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.card {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.productInfo {
+    flex: 1;
+}
+
+.productInfo h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #222;
+}
+
+.productInfo p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* =========================
+   HORIZONTAL LINE
+========================= */
+
+.right hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* =========================
+   PRICE DETAILS
+========================= */
+
+.priceRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #111;
+}
+
+/* =========================
+   PLACE ORDER BUTTON
+========================= */
+
+.placeOrder {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background: #000;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.placeOrder:hover {
+    background: #333;
+}
+
+.placeOrder:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+/* =========================
+   EMPTY CART
+========================= */
+
+.empty {
+    text-align: center;
+    color: #777;
+    padding: 30px 10px;
+}
+
+/* =========================
+   MOBILE / TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 94%;
+        margin: 80px auto 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .left {
+        padding: 20px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .paymentHeading {
+        margin-top: 30px !important;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 95%;
+        margin-top: 70px;
+    }
+
+    .left,
+    .right {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .left h2,
+    .right h2 {
+        font-size: 20px;
+    }
+
+    .form input,
+    .form textarea {
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    .card {
+        gap: 10px;
+    }
+
+    .card img {
+        width: 70px;
+        height: 75px;
+    }
+
+    .productInfo h3 {
+        font-size: 14px;
+    }
+
+    .productInfo p {
+        font-size: 13px;
+    }
+
+    .total {
+        font-size: 19px;
+    }
+
+    .placeOrder {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
